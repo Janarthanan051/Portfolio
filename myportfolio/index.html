@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Janarthanan M's developer portfolio featuring projects, skills, experience, education, and contact details."
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,107 +18,454 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="navContainer">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-    </div>
+    <header class="site-header">
+      <a class="brand" href="#home"><span class="nameColor">Janarthanan M</span><span>.</span></a>
+      <nav class="navContainer" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="themeToggle" id="themeToggle" type="button" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
 
-    <!-- Header -->
-    <div class="blueParent" id="about">
-      <div class="heroContainer">
-        <div class="hero-content">
-          <h1>Hi, I'm DHAYALAN </h1>
-          <h2>Web Developer</h2>
-          <p>
-            I specialize in creating dynamic, user-friendly websites and applications that enhance online experiences. 
-            With a strong foundation in HTML, CSS, and JavaScript, I build responsive and visually appealing interfaces.
-             I am proficient in various frameworks and libraries, such as React and Vue.js, which allow me to develop scalable 
-             solutions tailored to client needs..!
-          </p>
-          <a href="#">Download Resume</a>
+    <main>
+      <section class="heroSection" id="home">
+        <div class="heroContainer">
+          <div class="hero-content">
+            <p class="eyebrow">Full Stack Developer / Web Developer</p>
+            <h1>Hi, I'm <span class="nameColor">Janarthanan M</span></h1>
+            <h2><span id="typingText">Building modern web experiences.</span></h2>
+            <p class="hero-copy">
+              I create clean, responsive, and scalable applications with a focus on user experience,
+              performance, and practical business value.
+            </p>
+            <div class="hero-actions">
+              <a class="primaryBtn" href="#contact">Hire Me</a>
+              <a class="secondaryBtn" href="resume.pdf" download>Download Resume</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>6+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>4+</strong>
+                <span>Tech stacks</span>
+              </div>
+              <div>
+                <strong>1</strong>
+                <span>Certification track</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profileCard">
+              <img src="janaimg.jpeg" alt="Janarthanan M profile photo" />
+              <div class="profileBadge">Available for internships</div>
+            </div>
+          </div>
         </div>
-        <div class="hero-image">
-          <img src="th (1).jpeg" alt="profile-image" />
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- skills section -->
-    <div class="skillsContainer" id="skills">
-      <h1>My Skills</h1>
-      <span>Your project is in safe hand</span>
-      <div class="skillsItemsContainer">
-        <div class="skillItem">
-          <p>Html</p>
-          <div class="outerdiv">
-            <div class="htmldiv"></div>
-          </div>
+      <section class="sectionShell aboutSection" id="about">
+        <div class="sectionHeading">
+          <p>About Me</p>
+          <h2>Focused on building polished, reliable products.</h2>
         </div>
-        <div class="skillItem">
-          <p>Css</p>
-          <div class="outerdiv">
-            <div class="cssdiv"></div>
-          </div>
+        <div class="aboutGrid">
+          <article class="glassCard">
+            <h3>Introduction</h3>
+            <p>
+              I am a web developer who enjoys turning ideas into usable interfaces and full-stack
+              solutions. I value clean code, clear UI, and practical problem solving.
+            </p>
+          </article>
+          <article class="glassCard">
+            <h3>Skills & Interests</h3>
+            <p>
+              Frontend, backend basics, database workflows, UI design, and building projects that
+              demonstrate real-world impact.
+            </p>
+          </article>
+          <article class="glassCard">
+            <h3>Career Objective</h3>
+            <p>
+              To join a growth-focused team where I can contribute to product development, learn
+              from experienced engineers, and build strong technical depth.
+            </p>
+          </article>
         </div>
-        <div class="skillItem">
-          <p>python</p>
-          <div class="outerdiv">
-            <div class="gitdiv"></div>
-          </div>
-        </div>
-        <div class="skillItem">
-          <p>javascript</p>
-          <div class="outerdiv">
-            <div class="jsdiv"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- projects  -->
-    <div class="blueParent" id="projects">
-      <div class="projectsContainer">
-        <h1>My Projects</h1>
+      <section class="sectionShell" id="skills">
+        <div class="sectionHeading">
+          <p>Skills</p>
+          <h2>Frontend, backend, and tools.</h2>
+        </div>
+        <div class="skillsGrid">
+          <article class="skillCard">
+            <h3>Frontend</h3>
+            <div class="skillLogos" aria-label="Frontend skill logos">
+              <span class="skillLogo" title="HTML5"><i class="fab fa-html5"></i></span>
+              <span class="skillLogo" title="CSS3"><i class="fab fa-css3-alt"></i></span>
+              <span class="skillLogo" title="JavaScript"><i class="fab fa-js-square"></i></span>
+              <span class="skillLogo" title="React"><i class="fab fa-react"></i></span>
+            </div>
+            <div class="skillItem"><span class="skillName"><i class="fab fa-html5 htmlColor"></i>HTML</span><div class="outerdiv"><div class="htmldiv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fab fa-css3-alt cssColor"></i>CSS</span><div class="outerdiv"><div class="cssdiv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fab fa-js-square jsColor"></i>JavaScript</span><div class="outerdiv"><div class="jsdiv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fab fa-react reactColor"></i>React</span><div class="outerdiv"><div class="reactdiv"></div></div></div>
+          </article>
+          <article class="skillCard">
+            <h3>Backend</h3>
+            <div class="skillLogos" aria-label="Backend skill logos">
+              <span class="skillLogo" title="Node.js"><i class="fab fa-node-js"></i></span>
+              <span class="skillLogo" title="MongoDB"><i class="fas fa-database"></i></span>
+              <span class="skillLogo" title="Firebase"><i class="fas fa-fire"></i></span>
+              <span class="skillLogo" title="Postman"><i class="fas fa-paper-plane"></i></span>
+            </div>
+            <div class="skillItem"><span class="skillName"><i class="fab fa-node-js nodeColor"></i>Node.js</span><div class="outerdiv"><div class="nodediv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fas fa-database mongoColor"></i>MongoDB</span><div class="outerdiv"><div class="mongodiv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fas fa-fire firebaseColor"></i>Firebase</span><div class="outerdiv"><div class="firebasediv"></div></div></div>
+            <div class="skillItem"><span class="skillName"><i class="fas fa-paper-plane postmanColor"></i>Postman</span><div class="outerdiv"><div class="postmandiv"></div></div></div>
+          </article>
+          <article class="skillCard toolsCard">
+            <h3>Tools</h3>
+            <div class="skillLogos" aria-label="Tool logos">
+              <span class="skillLogo" title="Git"><i class="fab fa-git-alt"></i></span>
+              <span class="skillLogo" title="GitHub"><i class="fab fa-github"></i></span>
+              <span class="skillLogo" title="VS Code"><i class="fas fa-code"></i></span>
+            </div>
+            <div class="techTags">
+              <span><i class="fab fa-git-alt gitColor"></i>Git</span>
+              <span><i class="fab fa-github githubColor"></i>GitHub</span>
+              <span><i class="fas fa-code vscodeColor"></i>VS Code</span>
+              <span><i class="fas fa-pen-nib figmaColor"></i>Figma</span>
+              <span><i class="fas fa-wind tailwindColor"></i>Tailwind CSS</span>
+              <span><i class="fas fa-running motionColor"></i>Framer Motion</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sectionShell" id="projects">
+        <div class="sectionHeading">
+          <p>Projects</p>
+          <h2>Featured GitHub projects and technical highlights.</h2>
+        </div>
         <div class="projectItemsContainer">
-          <div class="project">
-            <h3>Restaurant Management Website</h3>
-            <p>
-              Streamlined operations for restaurant management with a user-friendly design...
-            </p>
-            <h4>TechStack</h4>
-            <span>Html</span>
-            <span>css</span>
-            <span>js</span>
-          </div>
-          <div class="project">
-            <h3>Crop Yield Optimization with ML</h3>
-            <p>
-              Developed a project leveraging ML algorithms for sustainable agriculture...
-            </p>
-            <h4>TechStack</h4>
-            <span>python</span>
-            <span>html</span>
-            <span>css</span>
-            <span>js</span>
+          <article class="project">
+            <span class="projectImage">M</span>
+            <h3>Money Manager Frontend</h3>
+            <p>React.js and Tailwind CSS dashboard for tracking income and expenses with analytics, category filtering, and account transfers.</p>
+            <div class="chipRow">
+              <span>React.js</span><span>Tailwind CSS</span><span>Dashboard UI</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="projectImage">B</span>
+            <h3>MoneyManager-Backend</h3>
+            <p>Node.js, Express.js, and MongoDB Atlas REST API for finance management with JWT authentication, transaction tracking, and analytics.</p>
+            <div class="chipRow">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB Atlas</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="projectImage">D</span>
+            <h3>DDNS</h3>
+            <p>JavaScript project focused on dynamic DNS handling and device access workflows.</p>
+            <div class="chipRow">
+              <span>JavaScript</span><span>Networking</span><span>Utilities</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="projectImage">S</span>
+            <h3>SIP_CALC</h3>
+            <p>JavaScript SIP calculator for estimating investment growth with a simple and user-friendly interface.</p>
+            <div class="chipRow">
+              <span>JavaScript</span><span>Calculator</span><span>Finance</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="projectImage">H</span>
+            <h3>HoneyPot</h3>
+            <p>Python-based honeypot project that demonstrates security awareness and attack observation techniques.</p>
+            <div class="chipRow">
+              <span>Python</span><span>Security</span><span>Monitoring</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <span class="projectImage">F</span>
+            <h3>Final_Project</h3>
+            <p>JavaScript project showcasing problem-solving, implementation, and end-to-end feature delivery.</p>
+            <div class="chipRow">
+              <span>JavaScript</span><span>Frontend</span><span>Feature Build</span>
+            </div>
+            <div class="projectLinks">
+              <a href="#">Live Demo</a>
+              <a href="https://github.com/Janarthanan051" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sectionShell timelineSection" id="education">
+        <div class="sectionHeading">
+          <p>Education, Certifications, and Experience</p>
+          <h2>Proof of continuous growth.</h2>
+        </div>
+        <div class="timelineGrid">
+          <article class="glassCard">
+            <h3>Education</h3>
+            <p>College details, coursework completed, and relevant technical learning milestones.</p>
+          </article>
+          <article class="glassCard">
+            <h3>Certifications</h3>
+            <p>IBM SkillsBuild certification and other courses completed to strengthen practical skills.</p>
+          </article>
+          <article class="glassCard">
+            <h3>Experience / Internship</h3>
+            <p>Company name, role, duration, and work summary can be added here for recruiters.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sectionShell achievementsSection" id="achievements">
+        <div class="sectionHeading">
+          <p>Achievements</p>
+          <h2>Highlights that strengthen placement readiness.</h2>
+        </div>
+        <div class="achievementGrid">
+          <article class="glassCard"><h3>Hackathons</h3><p>Participation and team problem-solving experience.</p></article>
+          <article class="glassCard"><h3>Paper Presentations</h3><p>Technical communication and presentation experience.</p></article>
+          <article class="glassCard"><h3>Certificates</h3><p>Industry-aligned certifications and course completion.</p></article>
+          <article class="glassCard"><h3>Competitions</h3><p>Problem-solving, coding, and innovation challenges.</p></article>
+        </div>
+      </section>
+
+      <section class="sectionShell contactSection" id="contact">
+        <div class="sectionHeading">
+          <p>Contact</p>
+          <h2>Let’s build something useful.</h2>
+        </div>
+        <div class="contactGrid">
+          <form class="contactForm" id="contactForm">
+            <div class="formMeta">
+              <div id="emailStatus" class="emailStatus" title="Email delivery status">EmailJS: Unknown</div>
+              <div id="formMessage" class="formMessage" aria-live="polite"></div>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="primaryBtn">Send Message</button>
+          </form>
+          <div class="contactCard glassCard">
+            <h3>Contact Info</h3>
+            <p>Email: janarthanan.m51@gmail.com</p>
+            <p>Phone: 7418218440</p>
+            <div class="socials socialLinks">
+              <a
+                href="https://www.linkedin.com/in/dhayalan-m-0402b6276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                aria-label="LinkedIn profile"
+                title="LinkedIn profile"
+              ><i class="fab fa-linkedin"></i></a>
+              <a
+                href="https://github.com/Janarthanan051"
+                aria-label="GitHub profile"
+                title="GitHub profile"
+              ><i class="fab fa-github"></i></a>
+              <a
+                href="https://www.instagram.com/dhaya_.42?igsh=OGp5ejZnN3AzaGM5"
+                aria-label="Instagram profile"
+                title="Instagram profile"
+              ><i class="fab fa-instagram"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- footer -->
-    <div class="footer">
-      <div class="socials">
-        <p>
-          
-        </p>
-        <a href="https://www.linkedin.com/in/dhayalan-m-0402b6276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/DhayalanMuruganandham"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/dhaya_.42?igsh=OGp5ejZnN3AzaGM5"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/dhaya_.42?igsh=OGp5ejZnN3AzaGM5"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p>Developed by Dhayalan</p>
-    </div>
+    <footer class="footer">
+      <p>Developed by Janarthanan M</p>
+    </footer>
+
+    <!-- EmailJS SDK (replace with official CDN if desired) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      // Configure these with your EmailJS account values (replace the placeholders)
+      const EMAILJS_SERVICE_ID = "service_kd03wmb"; // inserted from user
+      const EMAILJS_TEMPLATE_ID = "template_9cnmlig"; // inserted from user
+      const EMAILJS_USER_ID = "5_L4VZWFsXm1VdtFJ"; // inserted from user
+
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle?.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+        const icon = themeToggle.querySelector("i");
+        if (icon) {
+          icon.className = document.body.classList.contains("light-theme") ? "fas fa-sun" : "fas fa-moon";
+        }
+      });
+
+      const typingText = document.getElementById("typingText");
+      const messages = [
+        "Building modern web experiences.",
+        "Turning ideas into responsive interfaces.",
+        "Focused on full-stack problem solving.",
+      ];
+      let messageIndex = 0;
+      setInterval(() => {
+        if (!typingText) return;
+        messageIndex = (messageIndex + 1) % messages.length;
+        typingText.textContent = messages[messageIndex];
+      }, 3000);
+
+      // Rotate name color every 10 seconds
+      (function rotateNameColor() {
+        const nameEls = document.querySelectorAll('.nameColor');
+        if (!nameEls || nameEls.length === 0) return;
+        const colors = ['#e63946', '#ffb703', '#8ecae6', '#06d6a0', '#ffd6a5', '#8338ec'];
+        let idx = 0;
+        // Apply initial color
+        nameEls.forEach(el => el.style.color = colors[idx]);
+        setInterval(() => {
+          idx = (idx + 1) % colors.length;
+          nameEls.forEach(el => el.style.color = colors[idx]);
+        }, 10000);
+      })();
+
+      const contactForm = document.getElementById("contactForm");
+
+      function isEmailJsConfigured() {
+        const placeholders = ["YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "YOUR_USER_ID"];
+        return (
+          typeof EMAILJS_SERVICE_ID === 'string' && EMAILJS_SERVICE_ID.trim() !== '' && !placeholders.includes(EMAILJS_SERVICE_ID)
+          && typeof EMAILJS_TEMPLATE_ID === 'string' && EMAILJS_TEMPLATE_ID.trim() !== '' && !placeholders.includes(EMAILJS_TEMPLATE_ID)
+        );
+      }
+
+      function isEmailJsUserConfigured() {
+        return typeof EMAILJS_USER_ID === 'string' && EMAILJS_USER_ID.trim() !== '' && EMAILJS_USER_ID !== 'YOUR_USER_ID';
+      }
+
+      const emailStatusEl = document.getElementById('emailStatus');
+      const formMessageEl = document.getElementById('formMessage');
+
+      function showMessage(type, text, timeout = 5000) {
+        if (!formMessageEl) {
+          // fallback to alert if DOM element missing
+          alert(text);
+          return;
+        }
+        formMessageEl.className = 'formMessage show ' + (type === 'success' ? 'success' : type === 'error' ? 'error' : 'info');
+        formMessageEl.textContent = text;
+        if (timeout > 0) {
+          setTimeout(() => {
+            formMessageEl.classList.remove('show');
+          }, timeout);
+        }
+      }
+
+      function updateEmailStatus() {
+        if (!emailStatusEl) return;
+        if (!window.emailjs) {
+          emailStatusEl.textContent = 'EmailJS: SDK missing';
+          emailStatusEl.className = 'emailStatus inactive';
+          return;
+        }
+        const serviceReady = typeof EMAILJS_SERVICE_ID === 'string' && EMAILJS_SERVICE_ID.trim() !== '' && EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID';
+        const templateReady = typeof EMAILJS_TEMPLATE_ID === 'string' && EMAILJS_TEMPLATE_ID.trim() !== '' && EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID';
+
+        if (serviceReady && templateReady) {
+          emailStatusEl.textContent = 'EmailJS: Active';
+          emailStatusEl.className = 'emailStatus active';
+        } else if (serviceReady && !templateReady) {
+          emailStatusEl.textContent = 'EmailJS: Service set, template missing';
+          emailStatusEl.className = 'emailStatus inactive';
+        } else if (!serviceReady && templateReady) {
+          emailStatusEl.textContent = 'EmailJS: Template set, service missing';
+          emailStatusEl.className = 'emailStatus inactive';
+        } else {
+          emailStatusEl.textContent = 'EmailJS: Not configured';
+          emailStatusEl.className = 'emailStatus inactive';
+        }
+      }
+
+      // run initial status update
+      updateEmailStatus();
+
+      contactForm?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const subject = String(formData.get("subject") || "Portfolio Enquiry").trim();
+        const message = String(formData.get("message") || "").trim();
+        const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+
+        if (!isEmailJsConfigured() || !window.emailjs) {
+          // EmailJS not ready — show inline notice and fallback to mailto
+          showMessage('info', 'Email service not configured — opening your mail client.');
+          const mailto = `mailto:janarthanan.m51@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          // allow the message to be visible briefly before redirecting
+          setTimeout(() => { window.location.href = mailto; }, 800);
+          updateEmailStatus();
+          return;
+        }
+
+        try {
+          // initialize if user id provided
+          if (isEmailJsUserConfigured()) {
+            try { emailjs.init(EMAILJS_USER_ID); } catch (e) { /* ignore */ }
+          }
+
+          // Use the 4-argument form to include user ID if needed
+          await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, contactForm, isEmailJsUserConfigured() ? EMAILJS_USER_ID : undefined);
+          showMessage('success', 'Message sent — thank you!');
+          contactForm.reset();
+          updateEmailStatus();
+        } catch (err) {
+          console.error('EmailJS error:', err);
+          // Show error details inline for debugging (trim long messages)
+          let errText = '';
+          try {
+            if (err && err.text) errText = String(err.text);
+            else if (err && err.message) errText = String(err.message);
+            else errText = JSON.stringify(err);
+          } catch (e) { errText = String(err); }
+          if (errText.length > 240) errText = errText.slice(0, 240) + '...';
+          showMessage('error', 'Sending failed via EmailJS — opening your mail client. (' + errText + ')', 8000);
+          const mailto = `mailto:janarthanan.m51@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          setTimeout(() => { window.location.href = mailto; }, 1600);
+          updateEmailStatus();
+        }
+      });
+    </script>
   </body>
 </html>
